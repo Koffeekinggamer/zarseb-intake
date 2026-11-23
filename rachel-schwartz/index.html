@@ -1,0 +1,600 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="robots" content="noindex, nofollow">
+  <title>ZarSeb Website Prep Form — Rachel Schwartz</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Allura&family=Cormorant+SC:wght@600&family=Lato:wght@400;700&family=Montserrat:wght@700&family=PT+Serif:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="header-inner">
+      <div class="monogram" aria-hidden="true">ZS</div>
+      <div class="header-text">
+        <h1>ZARSEB ENTERPRISES LLC</h1>
+        <p class="title">Website Prep Form</p>
+        <p class="sub">A design-first questionnaire for a bookkeeping practice</p>
+      </div>
+      <div class="header-meta">
+        <div class="kicker">Prepared for</div>
+        <div class="who">Rachel Schwartz</div>
+        <div class="role">Bookkeeping practice</div>
+      </div>
+    </div>
+  </header>
+
+  <div class="sticky-bar" id="sticky-bar">
+    <div class="sticky-inner">
+      <div class="progress-row">
+        <span id="progress-label"><strong>0%</strong> complete</span>
+        <div class="progress-track" aria-hidden="true"><div class="progress-fill" id="progress-fill"></div></div>
+        <span class="draft-status" id="draft-status"></span>
+      </div>
+      <nav class="section-nav" aria-label="Sections">
+        <a href="#style">1 Style</a>
+        <a href="#color">2 Color</a>
+        <a href="#type">3 Type &amp; Logo</a>
+        <a href="#imagery">4 Imagery</a>
+        <a href="#personality">5 Personality</a>
+        <a href="#sites">6 Sites</a>
+        <a href="#a11y">7 Accessibility</a>
+        <a href="#business">8 Business</a>
+        <a href="#pages">9 Pages</a>
+        <a href="#growth">10 Growth</a>
+        <a href="#closing">11 Sign</a>
+      </nav>
+    </div>
+  </div>
+
+  <div id="form-root">
+  <main class="wrap">
+    <div class="intro">
+      <p>Thank you for choosing ZarSeb Enterprises to build your new website. This form starts with design — the look, feel, and personality of your site — then collects the essentials we need to present your bookkeeping practice professionally. The first version should feel like clear proof of legitimacy for prospective clients, and a foundation you can grow from later.</p>
+      <p>Your answers save automatically on this device, so you can pause and come back later. If something isn't ready yet, leave it blank and we'll follow up.</p>
+      <p class="muted">Items marked <span class="req">*</span> are the most helpful to complete first. Everything else can wait.</p>
+    </div>
+    <p class="note" id="draft-banner" hidden>A saved draft was restored from this device. You can keep editing, then submit when you're ready.</p>
+
+    <form id="intake-form" novalidate>
+      <div class="grid-2">
+        <label class="field">
+          <span class="field-label">Client name <span class="req">*</span></span>
+          <input id="client_name" data-field="client_name" data-kind="text" type="text" autocomplete="name" value="Rachel Schwartz">
+          <span class="hint">Please enter your name.</span>
+        </label>
+        <label class="field">
+          <span class="field-label">Date</span>
+          <input id="form_date" data-field="form_date" data-kind="text" type="date">
+        </label>
+      </div>
+
+      <!-- 1 -->
+      <section class="block" id="style">
+        <div class="section-head"><span class="section-num">1</span><h2>Style Direction</h2><span class="rule"></span></div>
+        <p class="help">Tap any that appeal to you. We can blend more than one.</p>
+        <div class="card-grid">
+          <button type="button" class="choice-card js-toggle" data-field="style_modern" aria-pressed="false">
+            <div class="name">Clean &amp; Modern</div>
+            <div class="specimen" style="font-family:Lato,sans-serif;font-weight:700">Aa Clarity</div>
+            <p class="desc">Crisp, uncluttered, and contemporary.</p>
+            <div class="chips"><span class="chip" style="background:#1B365D"></span><span class="chip" style="background:#5C6B7A"></span><span class="chip" style="background:#E8EDF2"></span></div>
+          </button>
+          <button type="button" class="choice-card js-toggle" data-field="style_warm" aria-pressed="false">
+            <div class="name">Warm &amp; Approachable</div>
+            <div class="specimen" style="font-family:Lato,sans-serif;color:#6B542C">Aa Welcome</div>
+            <p class="desc">Friendly, human, and easy to trust.</p>
+            <div class="chips"><span class="chip" style="background:#8A6D3B"></span><span class="chip" style="background:#E8E0D3"></span><span class="chip" style="background:#5C4A32"></span></div>
+          </button>
+          <button type="button" class="choice-card js-toggle" data-field="style_classic" aria-pressed="false">
+            <div class="name">Classic &amp; Professional</div>
+            <div class="specimen" style="font-family:'PT Serif',serif;font-weight:700">Aa Established</div>
+            <p class="desc">Traditional, composed, and credible.</p>
+            <div class="chips"><span class="chip" style="background:#1B365D"></span><span class="chip" style="background:#8A6D3B"></span><span class="chip" style="background:#F4EFE6"></span></div>
+          </button>
+          <button type="button" class="choice-card js-toggle" data-field="style_bold" aria-pressed="false">
+            <div class="name">Bold</div>
+            <div class="specimen" style="font-family:Montserrat,sans-serif;font-weight:700">Aa Confident</div>
+            <p class="desc">Strong contrast and decisive type.</p>
+            <div class="chips"><span class="chip" style="background:#12243F"></span><span class="chip" style="background:#8A6D3B"></span><span class="chip" style="background:#F0E6D0"></span></div>
+          </button>
+          <button type="button" class="choice-card js-toggle" data-field="style_minimal" aria-pressed="false">
+            <div class="name">Minimal</div>
+            <div class="specimen" style="font-family:Lato,sans-serif;color:#3F4C5A">Aa Quiet</div>
+            <p class="desc">Generous space and very little ornament.</p>
+            <div class="chips"><span class="chip" style="background:#F4F1EC"></span><span class="chip" style="background:#C9D2DC"></span><span class="chip" style="background:#3F4C5A"></span></div>
+          </button>
+          <button type="button" class="choice-card js-toggle" data-field="style_luxury" aria-pressed="false">
+            <div class="name">Luxury</div>
+            <div class="specimen" style="font-family:'Cormorant SC',serif;letter-spacing:.06em">Aa Refined</div>
+            <p class="desc">Elegant, polished, and considered.</p>
+            <div class="chips"><span class="chip" style="background:#12243F"></span><span class="chip" style="background:#8A6D3B"></span><span class="chip" style="background:#D9C7A5"></span></div>
+          </button>
+        </div>
+        <label class="field">
+          <span class="field-label">Mood words</span>
+          <p class="help">Three to five words for how the site should feel (for example: calm, precise, welcoming, confident).</p>
+          <input data-field="mood_words" data-kind="text" type="text" placeholder="calm, precise, welcoming">
+        </label>
+      </section>
+
+      <!-- 2 -->
+      <section class="block" id="color">
+        <div class="section-head"><span class="section-num">2</span><h2>Color Palette</h2><span class="rule"></span></div>
+        <p class="help">Tap any palettes that appeal. Navy, deep green, and warm neutrals often read as calm and trustworthy for finance. You can also tell us colors to avoid.</p>
+        <div class="swatch-grid">
+          <button type="button" class="swatch-card js-toggle" data-field="color_navy" aria-pressed="false">
+            <span class="chips"><span class="chip" style="background:#1B365D"></span><span class="chip" style="background:#FFFFFF"></span><span class="chip" style="background:#C9D2DC"></span></span>
+            <span class="name">Navy &amp; white — classic finance</span>
+          </button>
+          <button type="button" class="swatch-card js-toggle" data-field="color_green" aria-pressed="false">
+            <span class="chips"><span class="chip" style="background:#1F4E3D"></span><span class="chip" style="background:#F4EFE6"></span><span class="chip" style="background:#1B365D"></span></span>
+            <span class="name">Deep green &amp; cream — growth / trust</span>
+          </button>
+          <button type="button" class="swatch-card js-toggle" data-field="color_neutral" aria-pressed="false">
+            <span class="chips"><span class="chip" style="background:#F4EFE6"></span><span class="chip" style="background:#A89070"></span><span class="chip" style="background:#3F4C5A"></span></span>
+            <span class="name">Warm neutrals — cream, taupe, charcoal</span>
+          </button>
+          <button type="button" class="swatch-card js-toggle" data-field="color_gold" aria-pressed="false">
+            <span class="chips"><span class="chip" style="background:#8A6D3B"></span><span class="chip" style="background:#1B365D"></span><span class="chip" style="background:#D9C7A5"></span></span>
+            <span class="name">Muted gold &amp; navy — refined</span>
+          </button>
+          <button type="button" class="swatch-card js-toggle" data-field="color_teal" aria-pressed="false">
+            <span class="chips"><span class="chip" style="background:#2A6F6A"></span><span class="chip" style="background:#E8DCC8"></span><span class="chip" style="background:#3F4C5A"></span></span>
+            <span class="name">Teal &amp; sand — fresh and steady</span>
+          </button>
+          <button type="button" class="swatch-card js-toggle" data-field="color_burgundy" aria-pressed="false">
+            <span class="chips"><span class="chip" style="background:#6B2D3C"></span><span class="chip" style="background:#F7F1E8"></span><span class="chip" style="background:#8A6D3B"></span></span>
+            <span class="name">Burgundy &amp; ivory — traditional warmth</span>
+          </button>
+          <button type="button" class="swatch-card js-toggle" data-field="color_mono" aria-pressed="false">
+            <span class="chips"><span class="chip" style="background:#1A1A1A"></span><span class="chip" style="background:#FFFFFF"></span><span class="chip" style="background:#8A9198"></span></span>
+            <span class="name">Black, white &amp; gray — minimal</span>
+          </button>
+          <button type="button" class="swatch-card js-toggle" data-field="color_zarseb" aria-pressed="false">
+            <span class="chips"><span class="chip" style="background:#1B365D"></span><span class="chip" style="background:#8A6D3B"></span><span class="chip" style="background:#E8E0D3"></span></span>
+            <span class="name">Let ZarSeb propose a palette</span>
+          </button>
+        </div>
+        <label class="field">
+          <span class="field-label">Other / specific colors you like</span>
+          <input data-field="color_other_text" data-kind="text" type="text">
+        </label>
+        <label class="field">
+          <span class="field-label">Colors to avoid</span>
+          <input data-field="color_avoid" data-kind="text" type="text">
+        </label>
+      </section>
+
+      <!-- 3 -->
+      <section class="block" id="type">
+        <div class="section-head"><span class="section-num">3</span><h2>Typography &amp; Logo</h2><span class="rule"></span></div>
+        <p class="help">Tap the type feels that appeal. Script is typically used only for accents, not body text.</p>
+        <div class="font-grid">
+          <button type="button" class="font-card js-toggle" data-field="font_sans" aria-pressed="false">
+            <div class="name">Clean sans serif</div>
+            <div class="specimen sans">Aa Bookkeeping with care</div>
+          </button>
+          <button type="button" class="font-card js-toggle" data-field="font_serif" aria-pressed="false">
+            <div class="name">Classic serif</div>
+            <div class="specimen serif">Aa Bookkeeping with care</div>
+          </button>
+          <button type="button" class="font-card js-toggle" data-field="font_script" aria-pressed="false">
+            <div class="name">Elegant script — accents only</div>
+            <div class="specimen script">Aa Bookkeeping with care</div>
+          </button>
+          <button type="button" class="font-card js-toggle" data-field="font_mix" aria-pressed="false">
+            <div class="name">Serif headlines + sans body</div>
+            <div class="specimen mix"><span class="hl">Aa Headline</span><span class="bd">body in sans</span></div>
+          </button>
+        </div>
+        <label class="field">
+          <span class="field-label">Any other notes on type? (or a font you already use)</span>
+          <input data-field="fonts_notes" data-kind="text" type="text">
+        </label>
+        <div class="field-group">
+          <span class="group-label">Logo</span>
+          <div class="choice-row js-radio-group" data-group="logo" role="radiogroup">
+            <button type="button" class="pill" data-value="have">I have one and will send the file</button>
+            <button type="button" class="pill" data-value="need">I need a new logo</button>
+            <button type="button" class="pill" data-value="refresh">I have one, but it needs a refresh</button>
+          </div>
+        </div>
+      </section>
+
+      <!-- 4 -->
+      <section class="block" id="imagery">
+        <div class="section-head"><span class="section-num">4</span><h2>Imagery &amp; Layout</h2><span class="rule"></span></div>
+        <span class="group-label">Imagery</span>
+        <p class="help">Tap everything that should be part of the visual system.</p>
+        <div class="check-grid">
+          <button type="button" class="pill block js-toggle" data-field="img_own" aria-pressed="false">I'll provide my own photos</button>
+          <button type="button" class="pill block js-toggle" data-field="img_headshot_have" aria-pressed="false">I have a professional headshot and will send it</button>
+          <button type="button" class="pill block js-toggle" data-field="img_headshot_need" aria-pressed="false">I need a professional headshot</button>
+          <button type="button" class="pill block js-toggle" data-field="img_stock" aria-pressed="false">Tasteful professional stock is fine</button>
+          <button type="button" class="pill block js-toggle" data-field="img_illustrations" aria-pressed="false">Custom illustrations</button>
+          <button type="button" class="pill block js-toggle" data-field="img_icons" aria-pressed="false">Icons / simple graphics</button>
+        </div>
+        <div class="field-group">
+          <span class="group-label">Site structure</span>
+          <div class="choice-row js-radio-group" data-group="layout_structure" role="radiogroup">
+            <button type="button" class="pill" data-value="single">Single scrolling page</button>
+            <button type="button" class="pill" data-value="multi">Multi-page site</button>
+            <button type="button" class="pill" data-value="unsure">Not sure — advise me</button>
+          </div>
+        </div>
+        <div class="field-group">
+          <span class="group-label">Hero style (the first impression at the top of the home page)</span>
+          <div class="choice-row js-radio-group" data-group="layout_hero" role="radiogroup">
+            <button type="button" class="pill" data-value="photo">Full-width photo</button>
+            <button type="button" class="pill" data-value="band">Color band + typography</button>
+            <button type="button" class="pill" data-value="split">Split: photo and text</button>
+            <button type="button" class="pill" data-value="type">Minimal typography only</button>
+          </div>
+        </div>
+        <div class="field-group">
+          <span class="group-label">Amount of text versus visuals</span>
+          <div class="choice-row js-radio-group" data-group="layout_balance" role="radiogroup">
+            <button type="button" class="pill" data-value="text">Mostly text</button>
+            <button type="button" class="pill" data-value="balanced">Balanced</button>
+            <button type="button" class="pill" data-value="visual">Mostly visual</button>
+          </div>
+        </div>
+      </section>
+
+      <!-- 5 -->
+      <section class="block" id="personality">
+        <div class="section-head"><span class="section-num">5</span><h2>Brand Personality</h2><span class="rule"></span></div>
+        <p class="help">For each pair, choose the point that feels most like your practice. The middle is a balance of both.</p>
+        <div class="scale js-radio-group" data-group="pers_formal" role="radiogroup" aria-label="Formal to Friendly">
+          <span class="end">Formal</span>
+          <div class="dots"><button type="button" class="dot" data-value="1" aria-label="Formal to Friendly: 1 of 5"></button><button type="button" class="dot" data-value="2" aria-label="Formal to Friendly: 2 of 5"></button><button type="button" class="dot" data-value="3" aria-label="Formal to Friendly: 3 of 5"></button><button type="button" class="dot" data-value="4" aria-label="Formal to Friendly: 4 of 5"></button><button type="button" class="dot" data-value="5" aria-label="Formal to Friendly: 5 of 5"></button></div>
+          <span class="end right">Friendly</span>
+        </div>
+        <div class="scale js-radio-group" data-group="pers_tradition" role="radiogroup" aria-label="Traditional to Modern">
+          <span class="end">Traditional</span>
+          <div class="dots"><button type="button" class="dot" data-value="1" aria-label="Traditional to Modern: 1 of 5"></button><button type="button" class="dot" data-value="2" aria-label="Traditional to Modern: 2 of 5"></button><button type="button" class="dot" data-value="3" aria-label="Traditional to Modern: 3 of 5"></button><button type="button" class="dot" data-value="4" aria-label="Traditional to Modern: 4 of 5"></button><button type="button" class="dot" data-value="5" aria-label="Traditional to Modern: 5 of 5"></button></div>
+          <span class="end right">Modern</span>
+        </div>
+        <div class="scale js-radio-group" data-group="pers_reserved" role="radiogroup" aria-label="Reserved to Expressive">
+          <span class="end">Reserved</span>
+          <div class="dots"><button type="button" class="dot" data-value="1" aria-label="Reserved to Expressive: 1 of 5"></button><button type="button" class="dot" data-value="2" aria-label="Reserved to Expressive: 2 of 5"></button><button type="button" class="dot" data-value="3" aria-label="Reserved to Expressive: 3 of 5"></button><button type="button" class="dot" data-value="4" aria-label="Reserved to Expressive: 4 of 5"></button><button type="button" class="dot" data-value="5" aria-label="Reserved to Expressive: 5 of 5"></button></div>
+          <span class="end right">Expressive</span>
+        </div>
+        <div class="scale js-radio-group" data-group="pers_simple" role="radiogroup" aria-label="Simple to Detailed">
+          <span class="end">Simple</span>
+          <div class="dots"><button type="button" class="dot" data-value="1" aria-label="Simple to Detailed: 1 of 5"></button><button type="button" class="dot" data-value="2" aria-label="Simple to Detailed: 2 of 5"></button><button type="button" class="dot" data-value="3" aria-label="Simple to Detailed: 3 of 5"></button><button type="button" class="dot" data-value="4" aria-label="Simple to Detailed: 4 of 5"></button><button type="button" class="dot" data-value="5" aria-label="Simple to Detailed: 5 of 5"></button></div>
+          <span class="end right">Detailed</span>
+        </div>
+        <div class="scale js-radio-group" data-group="pers_serious" role="radiogroup" aria-label="Serious to Warm">
+          <span class="end">Serious</span>
+          <div class="dots"><button type="button" class="dot" data-value="1" aria-label="Serious to Warm: 1 of 5"></button><button type="button" class="dot" data-value="2" aria-label="Serious to Warm: 2 of 5"></button><button type="button" class="dot" data-value="3" aria-label="Serious to Warm: 3 of 5"></button><button type="button" class="dot" data-value="4" aria-label="Serious to Warm: 4 of 5"></button><button type="button" class="dot" data-value="5" aria-label="Serious to Warm: 5 of 5"></button></div>
+          <span class="end right">Warm</span>
+        </div>
+        <label class="field">
+          <span class="field-label">In a sentence, how should a first-time visitor feel?</span>
+          <input data-field="personality_note" data-kind="text" type="text">
+        </label>
+      </section>
+
+      <!-- 6 -->
+      <section class="block" id="sites">
+        <div class="section-head"><span class="section-num">6</span><h2>Sites You Like &amp; Dislike</h2><span class="rule"></span></div>
+        <p class="help">Share two or three websites you like — they do not have to be bookkeepers — and what you like about them. Then tell us anything you want to avoid, and any competitor sites we should know about.</p>
+        <div class="grid-2">
+          <label class="field">
+            <span class="field-label">Website you like — 1 (URL)</span>
+            <textarea data-field="like1_url" data-kind="text" rows="3" inputmode="url"></textarea>
+          </label>
+          <label class="field">
+            <span class="field-label">Why you like it</span>
+            <textarea data-field="like1_why" data-kind="text" rows="3"></textarea>
+          </label>
+        </div>
+        <div class="grid-2">
+          <label class="field">
+            <span class="field-label">Website you like — 2 (URL)</span>
+            <textarea data-field="like2_url" data-kind="text" rows="3" inputmode="url"></textarea>
+          </label>
+          <label class="field">
+            <span class="field-label">Why you like it</span>
+            <textarea data-field="like2_why" data-kind="text" rows="3"></textarea>
+          </label>
+        </div>
+        <div class="grid-2">
+          <label class="field">
+            <span class="field-label">Website you like — 3 (URL)</span>
+            <textarea data-field="like3_url" data-kind="text" rows="3" inputmode="url"></textarea>
+          </label>
+          <label class="field">
+            <span class="field-label">Why you like it</span>
+            <textarea data-field="like3_why" data-kind="text" rows="3"></textarea>
+          </label>
+        </div>
+        <div class="grid-2">
+          <label class="field">
+            <span class="field-label">Websites you dislike (URLs)</span>
+            <textarea data-field="dislike_urls" data-kind="text" rows="3"></textarea>
+          </label>
+          <label class="field">
+            <span class="field-label">Why they don't work for you</span>
+            <textarea data-field="dislike_why" data-kind="text" rows="3"></textarea>
+          </label>
+        </div>
+        <label class="field">
+          <span class="field-label">Competitor or peer sites we should be aware of</span>
+          <p class="help">Names or URLs are enough. A short note on what they do well — or what you want to do differently — is helpful.</p>
+          <textarea data-field="competitor_sites" data-kind="text" rows="3"></textarea>
+        </label>
+      </section>
+
+      <!-- 7 -->
+      <section class="block" id="a11y">
+        <div class="section-head"><span class="section-num">7</span><h2>Accessibility &amp; Readability</h2><span class="rule"></span></div>
+        <p class="help">Tap any that matter to you. Your site will already be designed to work on phone, tablet, and desktop.</p>
+        <div class="check-grid">
+          <button type="button" class="pill block js-toggle" data-field="a11y_large" aria-pressed="false">Prefer larger, highly readable type</button>
+          <button type="button" class="pill block js-toggle" data-field="a11y_contrast" aria-pressed="false">High contrast — avoid light-gray text</button>
+          <button type="button" class="pill block js-toggle" data-field="a11y_motion" aria-pressed="false">Keep motion subtle or off</button>
+          <button type="button" class="pill block js-toggle" data-field="a11y_phone" aria-pressed="false">Especially easy to read on a phone</button>
+        </div>
+        <label class="field">
+          <span class="field-label">Other accessibility or readability notes</span>
+          <input data-field="a11y_notes" data-kind="text" type="text">
+        </label>
+      </section>
+
+      <!-- 8 -->
+      <section class="block" id="business">
+        <div class="section-head"><span class="section-num">8</span><h2>Business Essentials</h2><span class="rule"></span></div>
+        <p class="help">Just the details we need to build accurately. Leave anything blank that isn't ready yet.</p>
+        <div class="grid-2">
+          <label class="field">
+            <span class="field-label">Business name <span class="req">*</span></span>
+            <input data-field="biz_legal_name" data-kind="text" type="text" autocomplete="organization">
+            <span class="hint">Please enter the business name.</span>
+          </label>
+          <label class="field">
+            <span class="field-label">DBA (if different)</span>
+            <input data-field="biz_dba" data-kind="text" type="text">
+          </label>
+        </div>
+        <span class="group-label">Credentials and certifications</span>
+        <p class="help">Tap all that apply. If you have one that isn't listed, use Other.</p>
+        <div class="check-grid cols-3">
+          <button type="button" class="pill block js-toggle" data-field="cred_qb" aria-pressed="false">QuickBooks ProAdvisor</button>
+          <button type="button" class="pill block js-toggle" data-field="cred_xero" aria-pressed="false">Xero advisor</button>
+          <button type="button" class="pill block js-toggle" data-field="cred_ea" aria-pressed="false">Enrolled Agent</button>
+          <button type="button" class="pill block js-toggle" data-field="cred_cpa" aria-pressed="false">CPA</button>
+          <button type="button" class="pill block js-toggle" data-field="cred_aipb" aria-pressed="false">Certified Bookkeeper (AIPB)</button>
+          <button type="button" class="pill block js-toggle" data-field="cred_nacpb" aria-pressed="false">NACPB</button>
+        </div>
+        <div class="other-row">
+          <button type="button" class="pill js-toggle" data-field="cred_other" aria-pressed="false">Other</button>
+          <input data-field="cred_other_text" data-kind="text" type="text" placeholder="Other credential">
+        </div>
+        <span class="group-label">Services to list on the site</span>
+        <p class="help">Tap every service you want listed. Unchecked items can be added later.</p>
+        <div class="check-grid cols-3">
+          <button type="button" class="pill block js-toggle" data-field="svc_monthly" aria-pressed="false">Monthly bookkeeping</button>
+          <button type="button" class="pill block js-toggle" data-field="svc_cleanup" aria-pressed="false">Catch-up / cleanup</button>
+          <button type="button" class="pill block js-toggle" data-field="svc_payroll" aria-pressed="false">Payroll</button>
+          <button type="button" class="pill block js-toggle" data-field="svc_ap_ar" aria-pressed="false">Accounts payable / receivable</button>
+          <button type="button" class="pill block js-toggle" data-field="svc_bankrec" aria-pressed="false">Bank reconciliation</button>
+          <button type="button" class="pill block js-toggle" data-field="svc_statements" aria-pressed="false">Financial statements</button>
+          <button type="button" class="pill block js-toggle" data-field="svc_qb_setup" aria-pressed="false">QuickBooks setup / training</button>
+          <button type="button" class="pill block js-toggle" data-field="svc_salestax" aria-pressed="false">Sales tax filing</button>
+          <button type="button" class="pill block js-toggle" data-field="svc_1099" aria-pressed="false">1099 preparation</button>
+          <button type="button" class="pill block js-toggle" data-field="svc_cashflow" aria-pressed="false">Budgeting / cash-flow reporting</button>
+          <button type="button" class="pill block js-toggle" data-field="svc_tax_cpa" aria-pressed="false">Tax-prep coordination with a CPA</button>
+          <button type="button" class="pill block js-toggle" data-field="svc_fcfo" aria-pressed="false">Fractional CFO / advisory</button>
+        </div>
+        <div class="other-row">
+          <button type="button" class="pill js-toggle" data-field="svc_other" aria-pressed="false">Other</button>
+          <input data-field="svc_other_text" data-kind="text" type="text" placeholder="Other service">
+        </div>
+        <div class="grid-2">
+          <label class="field">
+            <span class="field-label">Best business email <span class="req">*</span></span>
+            <input data-field="biz_email" data-kind="text" type="email" autocomplete="email" inputmode="email">
+            <span class="hint">Please enter a business email.</span>
+          </label>
+          <label class="field">
+            <span class="field-label">Best business phone <span class="req">*</span></span>
+            <input data-field="biz_phone" data-kind="text" type="tel" autocomplete="tel" inputmode="tel">
+            <span class="hint">Please enter a business phone.</span>
+          </label>
+        </div>
+        <span class="group-label">Service area</span>
+        <div class="choice-row">
+          <button type="button" class="pill js-toggle" data-field="area_local" aria-pressed="false">Local</button>
+          <button type="button" class="pill js-toggle" data-field="area_statewide" aria-pressed="false">Statewide</button>
+          <button type="button" class="pill js-toggle" data-field="area_remote" aria-pressed="false">Remote / nationwide</button>
+        </div>
+        <label class="field">
+          <span class="field-label">Service-area details (cities, counties, or regions) and address notes</span>
+          <p class="help">Home-based practices are welcome to keep a street address private. Note a city or region only, if you prefer.</p>
+          <textarea data-field="area_details" data-kind="text" rows="3"></textarea>
+        </label>
+        <div class="field-group">
+          <span class="group-label">Domain status <span class="req">*</span></span>
+          <div class="choice-row js-radio-group" data-group="domain_has" role="radiogroup">
+            <button type="button" class="pill" data-value="yes">I already have a domain</button>
+            <button type="button" class="pill" data-value="no">No, not yet</button>
+            <button type="button" class="pill" data-value="unsure">Not sure</button>
+          </div>
+          <span class="hint">Please tell us whether you already have a domain.</span>
+        </div>
+        <div class="grid-2">
+          <label class="field">
+            <span class="field-label">If yes, the domain name (e.g. yourpractice.com)</span>
+            <input data-field="domain_name" data-kind="text" type="text" inputmode="url">
+          </label>
+          <label class="field">
+            <span class="field-label">If not, preferred name ideas</span>
+            <input data-field="domain_ideas" data-kind="text" type="text">
+          </label>
+        </div>
+        <div class="warn">
+          <p><strong>Never write passwords on this form, and do not email them.</strong> ZarSeb will arrange secure access with you in a separate step.</p>
+        </div>
+      </section>
+
+      <!-- 9 -->
+      <section class="block" id="pages">
+        <div class="section-head"><span class="section-num">9</span><h2>Pages &amp; Features</h2><span class="rule"></span></div>
+        <span class="group-label">Pages for the first version</span>
+        <p class="help">Tap every page you want in the first version. Unchecked items can wait for a later phase.</p>
+        <div class="check-grid cols-3">
+          <button type="button" class="pill block js-toggle" data-field="page_home" aria-pressed="false">Home</button>
+          <button type="button" class="pill block js-toggle" data-field="page_about" aria-pressed="false">About</button>
+          <button type="button" class="pill block js-toggle" data-field="page_services" aria-pressed="false">Services</button>
+          <button type="button" class="pill block js-toggle" data-field="page_pricing" aria-pressed="false">Pricing / Packages</button>
+          <button type="button" class="pill block js-toggle" data-field="page_testimonials" aria-pressed="false">Testimonials</button>
+          <button type="button" class="pill block js-toggle" data-field="page_faq" aria-pressed="false">FAQ</button>
+          <button type="button" class="pill block js-toggle" data-field="page_contact" aria-pressed="false">Contact</button>
+          <button type="button" class="pill block js-toggle" data-field="page_book" aria-pressed="false">Book a Consultation</button>
+          <button type="button" class="pill block js-toggle" data-field="page_portal" aria-pressed="false">Client Portal link</button>
+          <button type="button" class="pill block js-toggle" data-field="page_resources" aria-pressed="false">Resources / Blog</button>
+          <button type="button" class="pill block js-toggle" data-field="page_privacy" aria-pressed="false">Privacy Policy</button>
+        </div>
+        <span class="group-label">Features</span>
+        <p class="help">For each feature, choose Must-have, Nice-to-have, or Not needed.</p>
+        <table class="matrix">
+          <thead>
+            <tr><th>Feature</th><th>Must-have</th><th>Nice-to-have</th><th>Not needed</th></tr>
+          </thead>
+          <tbody>
+            <tr class="js-radio-group" data-group="feat_booking" role="radiogroup" aria-label="Online consultation booking (e.g. Calendly)">
+              <td class="feat">Online consultation booking (e.g. Calendly)</td>
+              <td><button type="button" class="chip-choice" data-value="must">Must-have</button></td>
+              <td><button type="button" class="chip-choice nice" data-value="nice">Nice-to-have</button></td>
+              <td><button type="button" class="chip-choice no" data-value="no">Not needed</button></td>
+            </tr>
+            <tr class="js-radio-group" data-group="feat_contact" role="radiogroup" aria-label="Contact form">
+              <td class="feat">Contact form</td>
+              <td><button type="button" class="chip-choice" data-value="must">Must-have</button></td>
+              <td><button type="button" class="chip-choice nice" data-value="nice">Nice-to-have</button></td>
+              <td><button type="button" class="chip-choice no" data-value="no">Not needed</button></td>
+            </tr>
+            <tr class="js-radio-group" data-group="feat_upload" role="radiogroup" aria-label="Secure file upload">
+              <td class="feat">Secure file upload</td>
+              <td><button type="button" class="chip-choice" data-value="must">Must-have</button></td>
+              <td><button type="button" class="chip-choice nice" data-value="nice">Nice-to-have</button></td>
+              <td><button type="button" class="chip-choice no" data-value="no">Not needed</button></td>
+            </tr>
+            <tr class="js-radio-group" data-group="feat_portal_link" role="radiogroup" aria-label="Client portal link">
+              <td class="feat">Client portal link</td>
+              <td><button type="button" class="chip-choice" data-value="must">Must-have</button></td>
+              <td><button type="button" class="chip-choice nice" data-value="nice">Nice-to-have</button></td>
+              <td><button type="button" class="chip-choice no" data-value="no">Not needed</button></td>
+            </tr>
+            <tr class="js-radio-group" data-group="feat_newsletter" role="radiogroup" aria-label="Newsletter signup">
+              <td class="feat">Newsletter signup</td>
+              <td><button type="button" class="chip-choice" data-value="must">Must-have</button></td>
+              <td><button type="button" class="chip-choice nice" data-value="nice">Nice-to-have</button></td>
+              <td><button type="button" class="chip-choice no" data-value="no">Not needed</button></td>
+            </tr>
+            <tr class="js-radio-group" data-group="feat_blog" role="radiogroup" aria-label="Blog">
+              <td class="feat">Blog</td>
+              <td><button type="button" class="chip-choice" data-value="must">Must-have</button></td>
+              <td><button type="button" class="chip-choice nice" data-value="nice">Nice-to-have</button></td>
+              <td><button type="button" class="chip-choice no" data-value="no">Not needed</button></td>
+            </tr>
+            <tr class="js-radio-group" data-group="feat_reviews" role="radiogroup" aria-label="Google reviews display">
+              <td class="feat">Google reviews display</td>
+              <td><button type="button" class="chip-choice" data-value="must">Must-have</button></td>
+              <td><button type="button" class="chip-choice nice" data-value="nice">Nice-to-have</button></td>
+              <td><button type="button" class="chip-choice no" data-value="no">Not needed</button></td>
+            </tr>
+            <tr class="js-radio-group" data-group="feat_chat" role="radiogroup" aria-label="Live chat">
+              <td class="feat">Live chat</td>
+              <td><button type="button" class="chip-choice" data-value="must">Must-have</button></td>
+              <td><button type="button" class="chip-choice nice" data-value="nice">Nice-to-have</button></td>
+              <td><button type="button" class="chip-choice no" data-value="no">Not needed</button></td>
+            </tr>
+            <tr class="js-radio-group" data-group="feat_payment" role="radiogroup" aria-label="Payment links">
+              <td class="feat">Payment links</td>
+              <td><button type="button" class="chip-choice" data-value="must">Must-have</button></td>
+              <td><button type="button" class="chip-choice nice" data-value="nice">Nice-to-have</button></td>
+              <td><button type="button" class="chip-choice no" data-value="no">Not needed</button></td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
+
+      <!-- 10 -->
+      <section class="block" id="growth">
+        <div class="section-head"><span class="section-num">10</span><h2>Growth — Later Phase</h2><span class="rule"></span></div>
+        <p class="help">These questions help us plan after the first, credibility-focused version of the site is live.</p>
+        <label class="field">
+          <span class="field-label">Goals for the next 12 months</span>
+          <textarea data-field="growth_goals" data-kind="text" rows="4"></textarea>
+        </label>
+        <span class="group-label">Interest in later-phase marketing</span>
+        <p class="help">Tap any you'd like to explore once the site is live.</p>
+        <div class="check-grid">
+          <button type="button" class="pill block js-toggle" data-field="growth_seo" aria-pressed="false">Local SEO</button>
+          <button type="button" class="pill block js-toggle" data-field="growth_gbp" aria-pressed="false">Google Business Profile optimization</button>
+          <button type="button" class="pill block js-toggle" data-field="growth_email" aria-pressed="false">Email marketing</button>
+          <button type="button" class="pill block js-toggle" data-field="growth_blog" aria-pressed="false">Content / blog articles</button>
+        </div>
+      </section>
+
+      <!-- 11 -->
+      <section class="block" id="closing">
+        <div class="section-head"><span class="section-num">11</span><h2>Notes &amp; Signature</h2><span class="rule"></span></div>
+        <label class="field">
+          <span class="field-label">Anything else we should know?</span>
+          <textarea data-field="anything_else" data-kind="text" rows="5"></textarea>
+        </label>
+        <div class="grid-2">
+          <label class="field">
+            <span class="field-label">Signature (type your full name) <span class="req">*</span></span>
+            <input data-field="sign_name" data-kind="text" type="text" autocomplete="name">
+            <span class="hint">Please type your full name as a signature.</span>
+          </label>
+          <label class="field">
+            <span class="field-label">Date</span>
+            <input data-field="sign_date" data-kind="text" type="date">
+          </label>
+        </div>
+
+        <div class="submit-row">
+          <button type="submit" class="btn btn-primary" id="submit-btn">Submit form</button>
+          <button type="button" class="btn btn-ghost" id="fallback-download" hidden>Download a copy of my answers</button>
+          <span class="submit-msg" id="submit-msg" role="status"></span>
+        </div>
+
+        <div class="closing">
+          <div class="monogram" aria-hidden="true">ZS</div>
+          <h3>Thank you.</h3>
+          <p>When you're ready, submit the form. Leave any item blank if it is not ready yet.</p>
+          <p>We'll use your design direction to shape the first version of the site, then follow up on anything still open.</p>
+          <p>Questions? Contact Judson Miller, ZarSeb Enterprises LLC.</p>
+        </div>
+      </section>
+    </form>
+  </main>
+  <footer class="page-foot">
+    <span>ZarSeb Enterprises LLC · Confidential client intake</span>
+    <span>Your answers are saved on this device until you submit.</span>
+  </footer>
+  </div>
+
+  <div class="confirm" id="confirm">
+    <div class="confirm-card">
+      <h2>Thank you.</h2>
+      <p>Your website prep form was sent to ZarSeb Enterprises. You can close this page.</p>
+      <p>We'll use your design direction to shape the first version of the site, then follow up on anything still open.</p>
+      <p class="contact">Questions? Contact Judson Miller, ZarSeb Enterprises LLC.</p>
+    </div>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+  <script src="app.js"></script>
+</body>
+</html>
